@@ -247,4 +247,25 @@ img {
         row-gap: 2.5rem;
     }
 
+
+
+    /*================================*/
+    /*      FORM      */
+    /*================================*/
+
+    #form .title {
+        font-size: 1.75rem;
+    }
+
+    #form input,
+    #form textarea {
+        font-size: 1.125rem;
+        padding: 1rem 1.5rem;
+    }
+
+    #form .button {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
 }
