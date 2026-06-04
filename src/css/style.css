@@ -41,11 +41,14 @@ img {
     text-decoration: none;
     font-weight: 500;
     border-radius: 5px;
+    border: none;
 }
 
 
 
+/*================================*/
 /*       MAIN         */
+/*================================*/
 
 #main section {
     display: flex;
@@ -62,7 +65,9 @@ img {
 
 
 
+/*================================*/
 /*   WORKFLOW SECTION   */
+/*================================*/
 
 #workflow {
     background-color: var(--dark-50);
@@ -107,7 +112,9 @@ img {
 
 
 
+/*================================*/
 /*   ARTIGOS SECTION   */
+/*================================*/
 
 .cards {
     display: grid;
@@ -146,4 +153,44 @@ img {
     font-weight: 400;
     line-height: 150%;
     margin: 0;
+}
+
+
+/*================================*/
+/*      FORM      */
+/*================================*/
+
+#form {
+    background-color: var(--dark-50);
+}
+
+#form .title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--dark-10);
+}
+
+#form fielset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+#form input,
+#form textarea {
+    padding: 1rem 1.125rem;
+    border: 1px solid var(--dark-30);
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+#form input::placeholder {
+    color: var(--dark-20);
+}
+
+#form .button {
+    margin-top: 2rem;
+    width: 100%;
 }
