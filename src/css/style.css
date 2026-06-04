@@ -232,4 +232,19 @@ img {
         width: 50%;
     }
 
+
+
+    /*================================*/
+    /*   ARTIGOS SECTION   */
+    /*================================*/
+
+    #artigos .title {
+        font-size: 1.75rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2.5rem;
+    }
+
 }
