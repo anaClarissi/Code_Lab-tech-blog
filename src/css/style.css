@@ -194,3 +194,42 @@ img {
     margin-top: 2rem;
     width: 100%;
 }
+
+
+
+/*================================*/
+/*      MEDIA QUERIES      */
+/*================================*/
+
+/*================================*/
+/*      TABLETS      */
+/*================================*/
+
+@media (min-width: 768px) {
+
+    /*================================*/
+    /*   WORKFLOW SECTION   */
+    /*================================*/
+
+    #main #workflow {
+        padding: 4rem 5rem;
+    }
+
+    #workflow .container {
+        padding: 0 3rem;
+    }
+
+    #workflow .title {
+        font-size: 2rem;
+    }
+
+    #workflow .subtitle {
+        font-size: 1.25rem;
+    }
+
+    #workflow .button {
+        font-size: 1.125rem;
+        width: 50%;
+    }
+
+}
