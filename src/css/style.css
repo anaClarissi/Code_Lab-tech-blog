@@ -53,11 +53,10 @@ img {
 }
 
 
-#main section div {
+#main section .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     gap: 1.5rem;
 }
 
@@ -67,6 +66,11 @@ img {
 
 #workflow {
     background-color: var(--dark-50);
+    
+}
+
+#workflow .container {
+    align-items: center;
 }
 
 #workflow-img {
@@ -99,4 +103,47 @@ img {
     font-size: 0.875rem;
     font-weight: 700;
     width: 100%;
+}
+
+
+
+/*   ARTIGOS SECTION   */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.card {
+    border: 2px solid var(--dark-40);
+    border-radius: 8px;
+    overflow: hidden;
+    color: var(--dark-10);
+}
+
+.card-img {
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    padding: 1.5rem 1.125rem;
+}
+
+.card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 130%;
+    margin: 0;
+}
+
+.card-text {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
 }
