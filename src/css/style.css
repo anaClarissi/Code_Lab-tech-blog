@@ -1,6 +1,7 @@
 :root {
 
     --brand-color: #846AFF;
+    --brand-color-hover: #735edd;
 
     --dark-10: #121214;
     --dark-20: #7C7C8A;
@@ -42,6 +43,15 @@ img {
     font-weight: 500;
     border-radius: 5px;
     border: none;
+    transition: background-color .2s ease;
+}
+
+.button:hover {
+    background-color: var(--brand-color-hover);
+}
+
+.button:focus {
+    outline: 2px solid var(--brand-color-hover);
 }
 
 
@@ -193,6 +203,15 @@ img {
     border-radius: 4px;
     font-size: 0.875rem;
     font-weight: 400;
+}
+
+#form input:focus,
+#form textarea:focus {
+    outline: 1px solid var(--brand-color);
+}
+
+#form textarea {
+    resize: none;
 }
 
 #form input::placeholder {
