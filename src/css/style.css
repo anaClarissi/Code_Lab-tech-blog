@@ -75,7 +75,15 @@ img {
 }
 
 #workflow .container {
+    flex-direction: column;
     align-items: center;
+}
+
+#workflow .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 #workflow-img {
@@ -118,7 +126,7 @@ img {
 
 .cards {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 330px;
     gap: 2rem;
 }
 
@@ -132,13 +140,14 @@ img {
 .card-img {
     object-fit: cover;
     border-radius: 0;
+    height: 175px;
 }
 
 .card-body {
     display: flex;
     flex-direction: column;
     gap: 0.875rem;
-    padding: 1.5rem 1.125rem;
+    justify-content: space-evenly;
 }
 
 .card-title {
@@ -243,8 +252,13 @@ img {
     }
 
     .cards {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2,330px);
+        grid-template-rows: repeat(3, 335px);
         row-gap: 2.5rem;
+    }
+
+    .card-img {
+        height: 175px;
     }
 
 
@@ -269,3 +283,99 @@ img {
     }
 
 }
+
+/*================================*/
+/*      DESKTOPS      */
+/*================================*/
+
+@media (min-width: 1280px) {
+
+    /*================================*/
+    /*   WORKFLOW SECTION   */
+    /*================================*/
+    
+    #main #workflow .container {
+        flex-direction: row-reverse !important;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #workflow-img,
+    #workflow .content {
+        flex: 1;
+        width: 50%;
+    }
+
+    #workflow .content {
+        align-items: flex-start;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    #workflow .title {
+        font-size: 2.5rem;
+    }
+
+    #workflow .subtitle {
+        font-size: 1.5rem;
+    }
+
+    #workflow .title,
+    #workflow .subtitle {
+        text-align: left;
+    }
+
+    #workflow-img {
+        max-width: 400px;
+    }
+
+
+    
+    /*================================*/
+    /*   ARTIGOS SECTION   */
+    /*================================*/
+
+    #artigos .container {
+        gap: 8rem !important;
+    }
+
+    #artigos .title {
+        font-size: 2rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 360px);
+        grid-template-rows: repeat(2, 385px);
+        row-gap: 2.5rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 1.125rem;
+    }
+
+
+    
+    /*================================*/
+    /*      FORM      */
+    /*================================*/
+
+    #form .container {
+        align-items: center;
+        width: 50%;
+    }
+
+    #form .container * {
+        width: 100%;
+    }
+
+    #form .title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+}
+
